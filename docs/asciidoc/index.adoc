@@ -1,0 +1,224 @@
+:authorinitials: GS
+:institution: Université de Rennes, Irisa
+:icons: font
+:stem: asciimath
+
+= Correct Exam
+
+[.subtitle]
+«{nbsp}Automatiser la correction dans l'ère de l'IA{nbsp}»
+
+[.author]
+Gerson Sunyé
+
+[.institution]
+{institution}
+
+[.date]
+Octobre 2026
+
+== Introduction
+qs
+
+== Intent
+
+[.strike-animate%step]
+Completely remplace humans
+
+
+Or not
+
+[%auto-animate]
+== !
+
+Matched element will be animated automatically!
+
+[%auto-animate]
+== !
+
+
+*Matched element will be animated automatically!*
+
+And move to the right position!
+
+[%hardbreaks]
+⬆️
+⬆️
+⬆️
+
+[%auto-animate]
+== !
+
+[source%linenums,js,data-id=planets]
+----
+let planets = [
+  { name: 'mars', diameter: 6779 },
+]
+----
+
+[%auto-animate]
+== !
+
+[source%linenums,js,data-id=planets]
+----
+let planets = [
+  { name: 'mars', diameter: 6779 },
+  { name: 'earth', diameter: 12742 },
+  { name: 'jupiter', diameter: 139820 }
+]
+----
+
+[%auto-animate]
+== !
+
+[source%linenums,js,data-id=planets]
+----
+let circumferenceReducer = ( c, planet ) => {
+  return c + planet.diameter * Math.PI;
+}
+
+let planets = [
+  { name: 'mars', diameter: 6779 },
+  { name: 'earth', diameter: 12742 },
+  { name: 'jupiter', diameter: 139820 }
+]
+
+let c = planets.reduce( circumferenceReducer, 0 )
+----
+
+[%auto-animate,auto-animate-unmatched=false]
+== Unmatched
+
+Introduction. (matched)
+
+[%auto-animate,auto-animate-unmatched=false]
+== Unmatched
+
+Introduction. (matched)
+
+This will be shown instantly ⚡ (unmatched)
+
+[%auto-animate]
+== !
+
+First Item
+
+[%auto-animate]
+== !
+
+First Item
+
+Second Item
+
+[%auto-animate%auto-animate-restart]
+== !
+
+First Item
+
+Second Item
+
+Third Item (restart)
+
+[%auto-animate]
+== !
+
+First Item
+
+Second Item
+
+Third Item (restart)
+
+Fourth Item
+
+[%auto-animate,auto-animate-easing="ease-in-out"]
+== Easing In Out
+
+🏓 Ping?
+
+[%auto-animate,auto-animate-easing="ease-in-out"]
+== Easing In Out
+
+🏓 Ping?
+
+Pong! 🏓
+
+[%auto-animate,auto-animate-easing="ease-in-out"]
+== Easing In Out
+
+🏓 Ping?
+
+Pong! 🏓
+
+🏓 Ping?
+
+[%auto-animate,auto-animate-easing="ease-in-out"]
+== Easing In OIUT
+
+🏓 Ping?
+
+Pong! 🏓
+
+🏓 Ping?
+
+Pong! 🏓
+
+== But first
+
+WARNING: This presentation is dangerous!
+
+== Topic
+
+[.highlight-blue%step]
+blue
+
+[.strike%step]
+white
+
+[.highlight-red%step]
+red
+
+== A
+
+[source,kotlin,data-lang-family=compiled]
+----
+println("Hello world")
+----
+
+[%interactive,data-state=in-progress]
+- [ ] Dig
+- [x] Plant
+- [ ] Hose
+
+
+
+== A
+
+[data-context=civil-rights,data-event=speech,data-date=28/08/1963]
+> I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin, but by the content of their character. I have a dream today!
+> -- Martin Luther King Jr. delivering the speech at the 1963 Washington D.C. Civil Rights March.
+
+== Stem
+
+[stem,data-algebra-concept=square-root]
+++++
+\sqrt{37} = \sqrt{\frac{73^2-1}{12^2}} \approx \frac{73}{12} (1 - \frac{1}{2\cdot73^2})
+++++
+
+== Audio
+audio::flock-of-seagulls.mp3[data-license="cc-3.0"]
+
+== Video 
+
+video::kZH9JtPBq7k[youtube,start=34,data-video-id=kZH9JtPBq7k]
+
+== Footnotes
+
+The hail-and-rainbow protocol can be initiated at three levels:
+
+. doublefootnote:[The double hail-and-rainbow level makes my toes tingle.]
+. tertiary
+. apocalyptic
+
+A bold statement!footnote:disclaimer[Opinions are my own.]
+
+Another outrageous statement.footnote:disclaimer[]

@@ -1,0 +1,8 @@
+**/build/
+**/dist/
+**/public/
+**/target/
+**/node_modules/
+**/.vscode/
+package-lock.json
+Gemfile.lock

@@ -1,0 +1,38 @@
+.colist {
+    display: inline-block;
+    text-align: left;
+    margin: 0 0 0 1em;
+    position: relative;
+}
+
+div.imageblock + div.title {
+    font-size: 32px
+}
+
+/* .strike {
+  text-decoration: line-through;
+  text-decoration-thickness: 0.1em;
+  text-decoration-color: currentColor;
+} */
+
+.reveal .fragment.strike-animate {
+  opacity: 1;
+  visibility: inherit;
+  position: relative;
+  display: inline-block;
+}
+
+.reveal .fragment.strike-animate::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0.1em;
+  background: currentColor;
+  transition: width 0.4s ease;
+}
+
+.reveal .fragment.strike-animate.visible::after {
+  width: 100%;
+}
