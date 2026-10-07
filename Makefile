@@ -37,7 +37,7 @@ $(SITE_DIR)/%.html: $(SLIDE_DIR)/%.adoc
 
 slides: resources $(SLIDE_TARGETS)
 #slides: $(SLIDE_TARGETS)
-	bundle exec asciidoctor-revealjs --version
+	npx asciidoctor-revealjs --version
 
 
 resources: prepare 
@@ -58,10 +58,10 @@ clean:
 	rm -rf build
 
 serve:
-	bundle exec adsf  -L -r ./build/site
+	npx live-server  ./build/site
 
 install:
-	bundle install
+	npm install
 
 update:
 	git submodule update --remote --merge

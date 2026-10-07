@@ -28,6 +28,17 @@ Completely remplace humans
 
 Or not
 
+
+. Préparation
+. Correction
+. Publication des notes
+
+
+
+
+
+
+
 [%auto-animate]
 == !
 
