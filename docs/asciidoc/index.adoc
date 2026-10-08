@@ -172,5 +172,11 @@ image::correctexam-consultation.png[]
 == Quelques retours
 
 .Étudiants
+* La consultation des copies est devenue simple.
+* Le retour rapide sur leur copie est apprécié.
 
-.
+.Enseignants
+* Possibilité de corriger quelques questions entre deux cours.
+* Sentiment d'une correction plus équitable.
+* Possibilité de corriger n'importe où{nbsp}:
+** pendant une réunion ou une présentation trop longue 🙂  
