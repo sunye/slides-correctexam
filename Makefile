@@ -18,8 +18,8 @@ site: slides
 $(SITE_DIR)/%.html: $(SLIDE_DIR)/%.adoc 
 	@echo '[Generating Reveal.js website]'
 	npx asciidoctor-revealjs \
-		--attribute revealjs_customtheme=css/stereopticon.css \
-		--attribute customcss=css/custom.css \
+ 		--attribute revealjs_customtheme=css/stereopticon.css \
+ 		--attribute customcss=css/custom.css \
 		--attribute revealjs_width=1880 \
 		--attribute revealjs_height=1080 \
 		--attribute revealjs_center=false \
@@ -31,8 +31,10 @@ $(SITE_DIR)/%.html: $(SLIDE_DIR)/%.adoc
 		--attribute revealjs_margin=0 \
 		--attribute revealjs_progress=true \
 		--attribute revealjsdir=$(REVEAL) \
+		--attribute imagesdir=images \
 		-v \
 		-o $@ $<
+
 
 
 slides: resources $(SLIDE_TARGETS)

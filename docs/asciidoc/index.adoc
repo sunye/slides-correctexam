@@ -17,219 +17,160 @@ Gerson Sunyé
 [.date]
 Octobre 2026
 
-== Introduction
-qs
+== Correct Exam
 
-== Intent
+* Outil d'*aide* à la correction d'épreuves écrites.
+* Logiciel libre, développé par des enseignants-chercheurs de l'Université de Rennes.
 
-[.strike-animate%step]
-Completely remplace humans
+== L'évaluation dans l'ère de l'IA générative
 
+* Les outils d'IA générative font partie du quotidien de nos étudiants. 
+* Ils banalisent et dénaturent une grande partie des devoirs, examens, projets, travaux pratiques, exercices théoriques, etc.
 
-Or not
+=> *Nous devons faire évoluer notre manière d'évaluer*. 
 
+{empty} +
+{empty} +
 
-. Préparation
-. Correction
-. Publication des notes
+TIP: Le papier et le crayon ont encore de l’avenir{nbsp}!
 
 
+== Évaluation écrite
 
+.Le supplice des étudiants 
+* Longue attente des résultats.
+* Consultation des copies difficile, voire impossible.
+* Peu, voire aucun retour.
 
+.Le calvaire des enseignants
+* Correction{nbsp}:
+** très longue, sujette à erreurs.
+** difficile à réaliser pendant des courtes périodes.
+** cohérence difficile.
+** beaucoup de répétitions (commentaires, notations).
 
 
+== La réponse de Correct Exam
 
-[%auto-animate]
-== !
+.Automatisation des tâches répétitives{nbsp}:
+* Réutilisation des commentaires d'une même question.
+* Possibilité d'associer une note à un commentaire.
+* Comparaison rapide des réponses comportant les mêmes commentaires.
+* Calcul de la note finale d'une copie.
+* Identification automatique des auteurs des copies.
+* Exportation des résultats au format Excel.
 
-Matched element will be animated automatically!
 
-[%auto-animate]
-== !
+== Il permet aussi
 
+.Correction
+* Différents styles de notation{nbsp}:
+** directe, par commentaires positifs ou négatifs.
+* Évaluation en simultané d'un ensemble de réponses similaires.
+* Possibilité d'annoter les copies à l'aide d'un stylet pendant la correction.
 
-*Matched element will be animated automatically!*
+.Bonus
+* Génération automatique d'un corrigé à partir des meilleures réponses.
+* Statistiques par évaluation.
 
-And move to the right position!
+== Il permet également 
 
-[%hardbreaks]
-⬆️
-⬆️
-⬆️
+.Préparation du sujet
+* Seul le format PDF est requis.
+* Plusieurs modèles d'évaluation disponibles{nbsp}: Word, LibreOffice, LaTeX, Asciidoc, Markdown, etc.
+* Prise en charge des questions ouvertes et à choix multiple.
 
-[%auto-animate]
-== !
+.Consultation de copies
+* Envoi d'un exemplaire annoté aux étudiants.
+* Consultation à partir d'un lien de navigation.
+* Demande d'explications par formulaire web
 
-[source%linenums,js,data-id=planets]
-----
-let planets = [
-  { name: 'mars', diameter: 6779 },
-]
-----
+.Fonctionnalités additionnelles
+* Correction d'erreurs de numérisation.
+* Importation et exportation d'un module d'enseignement
 
-[%auto-animate]
-== !
 
-[source%linenums,js,data-id=planets]
-----
-let planets = [
-  { name: 'mars', diameter: 6779 },
-  { name: 'earth', diameter: 12742 },
-  { name: 'jupiter', diameter: 139820 }
-]
-----
+== Correction des copies
 
-[%auto-animate]
-== !
+.Étapes
+. Préparation du sujet.
+. _Réalisation de l'épreuve_.
+. Numérisation des copies.
+. Association entre les copies et les étudiants.
+. Correction.
+. Publication des notes.
+. Consultation des copies.
 
-[source%linenums,js,data-id=planets]
-----
-let circumferenceReducer = ( c, planet ) => {
-  return c + planet.diameter * Math.PI;
-}
 
-let planets = [
-  { name: 'mars', diameter: 6779 },
-  { name: 'earth', diameter: 12742 },
-  { name: 'jupiter', diameter: 139820 }
-]
+[.columns]
+== Étape {counter:step}: Préparation du sujet
 
-let c = planets.reduce( circumferenceReducer, 0 )
-----
+[.column.is-two-thirds]
+image::correctexam-annotation.png[align=center]
 
-[%auto-animate,auto-animate-unmatched=false]
-== Unmatched
+[.column]
+* Chargement du sujet
+* Sélection des zones de réponse
+* Attribution des poids des questions
+* Choix du mode de notations
 
-Introduction. (matched)
+== Étape {counter:step}: Réalisation de l'épreuve
 
-[%auto-animate,auto-animate-unmatched=false]
-== Unmatched
+image::exam-easy.jpg[align=center]
 
-Introduction. (matched)
+[.columns]
+== Étape {counter:step}: Numérisation des copies
 
-This will be shown instantly ⚡ (unmatched)
+[.column.is-two-thirds]
+image::correctexam-numerisation.png[]
 
-[%auto-animate]
-== !
+[.column]
+* Numérisation et chargement des copies
+* Correction d'erreurs{nbsp}:
+** alignement, ordre, sens, etc.
 
-First Item
+[.columns]
+== Étape {counter:step}: Association entre les copies et les étudiants.
 
-[%auto-animate]
-== !
+[.column.is-two-thirds]
+image::correctexam-association.png[]
 
-First Item
+[.column]
+* Reconnaissance automatique des noms ou numéros d'étudiant
 
-Second Item
+[.columns]
+== Étape {counter:step}: Correction.
 
-[%auto-animate%auto-animate-restart]
-== !
+[.column.is-two-thirds]
+image::correctexam-correction.png[width=1200px]
 
-First Item
+[.column]
+* Création et attribution de commentaires à la volé
+* Annotation de la copie
 
-Second Item
+[.columns]
+== Étape {counter:step}: Publication des notes.
 
-Third Item (restart)
+[.column.is-two-thirds]
+image::correctexam-publication.png[]
 
-[%auto-animate]
-== !
+[.column]
+* Envoi d'un courriel aux étudiants
+** Avec ou sans la copie annotée
 
-First Item
+[.columns]
+== Étape {counter:step}: Consultation des copies.
 
-Second Item
+[.column.is-two-thirds]
+image::correctexam-consultation.png[]
 
-Third Item (restart)
+[.column]
+* Accès à la réponse correcte
+* Envoi d'un courriel correcteurs
+** avec les informations du contexte{nbsp}‼️
 
-Fourth Item
+== Quelques retours
 
-[%auto-animate,auto-animate-easing="ease-in-out"]
-== Easing In Out
+.Étudiants
 
-🏓 Ping?
-
-[%auto-animate,auto-animate-easing="ease-in-out"]
-== Easing In Out
-
-🏓 Ping?
-
-Pong! 🏓
-
-[%auto-animate,auto-animate-easing="ease-in-out"]
-== Easing In Out
-
-🏓 Ping?
-
-Pong! 🏓
-
-🏓 Ping?
-
-[%auto-animate,auto-animate-easing="ease-in-out"]
-== Easing In OIUT
-
-🏓 Ping?
-
-Pong! 🏓
-
-🏓 Ping?
-
-Pong! 🏓
-
-== But first
-
-WARNING: This presentation is dangerous!
-
-== Topic
-
-[.highlight-blue%step]
-blue
-
-[.strike%step]
-white
-
-[.highlight-red%step]
-red
-
-== A
-
-[source,kotlin,data-lang-family=compiled]
-----
-println("Hello world")
-----
-
-[%interactive,data-state=in-progress]
-- [ ] Dig
-- [x] Plant
-- [ ] Hose
-
-
-
-== A
-
-[data-context=civil-rights,data-event=speech,data-date=28/08/1963]
-> I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin, but by the content of their character. I have a dream today!
-> -- Martin Luther King Jr. delivering the speech at the 1963 Washington D.C. Civil Rights March.
-
-== Stem
-
-[stem,data-algebra-concept=square-root]
-++++
-\sqrt{37} = \sqrt{\frac{73^2-1}{12^2}} \approx \frac{73}{12} (1 - \frac{1}{2\cdot73^2})
-++++
-
-== Audio
-audio::flock-of-seagulls.mp3[data-license="cc-3.0"]
-
-== Video 
-
-video::kZH9JtPBq7k[youtube,start=34,data-video-id=kZH9JtPBq7k]
-
-== Footnotes
-
-The hail-and-rainbow protocol can be initiated at three levels:
-
-. doublefootnote:[The double hail-and-rainbow level makes my toes tingle.]
-. tertiary
-. apocalyptic
-
-A bold statement!footnote:disclaimer[Opinions are my own.]
-
-Another outrageous statement.footnote:disclaimer[]
+.
