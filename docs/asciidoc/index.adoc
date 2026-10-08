@@ -21,6 +21,8 @@ Octobre 2026
 
 * Outil d'*aide* à la correction d'épreuves écrites.
 * Logiciel libre, développé par des enseignants-chercheurs de l'Université de Rennes.
+* Accessible sur{nbsp}: https://correctexam.pages.dev/
+* Code source{nbsp}: icon:github[] https://github.com/correctexam 
 
 == L'évaluation dans l'ère de l'IA générative
 
